@@ -1,0 +1,8 @@
+[2025-03-25 10:00:00] Running make -j4
+[2025-03-25 10:00:01] g++ -c -O2 -Wall src/main.cpp -o obj/main.o
+[2025-03-25 10:00:02] g++ -c -O2 -Wall src/module1.cpp -o obj/module1.o
+[2025-03-25 10:00:03] g++ -c -O2 -Wall src/module2.cpp -o obj/module2.o
+[2025-03-25 10:00:04] g++ -c -O2 -Wall src/module3.cpp -o obj/module3.o
+[2025-03-25 10:00:10] g++ -c -O2 -Wall src/module4.cpp -o obj/module4.o # Slow compilation
+[2025-03-25 10:00:30] g++ -o bin/myapp obj/main.o obj/module1.o obj/module2.o obj/module3.o obj/module4.o -lm -pthread
+[2025-03-25 10:00:31] Build complete.
