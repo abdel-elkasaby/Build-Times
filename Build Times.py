@@ -57,5 +57,3 @@ module_num = int(re.search(r"module(\d+)", new_file["source_file"]).group(1))
 new_features_poly = poly.transform(pd.DataFrame([[module_num]], columns=["module_num"]))
 predicted = poly_model.predict(new_features_poly)
 print(f"\nPredicted duration for 'module5.cpp': {predicted[0]:.2f} seconds")
-
-print("test")
